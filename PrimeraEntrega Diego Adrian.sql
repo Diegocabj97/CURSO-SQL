@@ -1,4 +1,5 @@
 -- El objetivo es realizar una base de datos de un local de venta de productos de cerámica.
+-- El negocio compra productos al proveedor para luego sus empleados realizar ventas a los clientes.
 
 
 CREATE DATABASE ceramicAna;
