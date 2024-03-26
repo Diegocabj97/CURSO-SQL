@@ -12,7 +12,7 @@ CREATE TABLE Negocio(
     direccion VARCHAR(255),
     telefono VARCHAR(20)
 )
-COMMENT "Contiene información básica del negocio"
+COMMENT "Contiene información básica del negocio que compra productos al proveedor"
 ;
 
 
@@ -22,7 +22,7 @@ CREATE TABLE Proveedor (
     direccion VARCHAR(255),
     telefono VARCHAR(20)
 )
-COMMENT "Contiene información del Proveedor"
+COMMENT "Contiene información del Proveedor que le vende productos al negocio"
 ;
 
 
@@ -33,7 +33,7 @@ CREATE TABLE Producto(
     descripcion TEXT,
     precio DECIMAL(10, 2)
 )
-COMMENT "Contiene información de los productos"
+COMMENT "Contiene información de los productos que se utilizan en las ventas"
 ;
 
 
@@ -43,7 +43,7 @@ CREATE TABLE Clientes (
     direccion VARCHAR(255),
     telefono VARCHAR(20)
 )
-COMMENT "Contiene información de los clientes"
+COMMENT "Contiene información de los clientes que compran los productos del negocio"
     ;
 
 CREATE TABLE Empleados (
@@ -53,7 +53,7 @@ CREATE TABLE Empleados (
     fecha_contratacion DATE,
     salario DECIMAL(10, 2)
 )
-COMMENT "Contiene información de los empleados"
+COMMENT "Contiene información de los empleados que realizan ventas de productos a los clientes"
 ;
 CREATE TABLE Ventas (
     id_venta INT AUTO_INCREMENT PRIMARY KEY,
@@ -61,7 +61,7 @@ CREATE TABLE Ventas (
     total DECIMAL(10, 2)
 )
 
-COMMENT "Contiene información de las ventas"
+COMMENT "Contiene información de las ventas de Productos que son realizadas por los Empleados a los Clientes "
 ;
 
 
