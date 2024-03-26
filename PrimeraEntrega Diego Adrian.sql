@@ -10,7 +10,9 @@ CREATE TABLE Negocio(
     nombre VARCHAR(100),
     direccion VARCHAR(255),
     telefono VARCHAR(20)
-);
+)
+COMMENT "Contiene información básica del negocio"
+;
 
 
 CREATE TABLE Proveedor (
@@ -18,7 +20,9 @@ CREATE TABLE Proveedor (
     nombre VARCHAR(100),
     direccion VARCHAR(255),
     telefono VARCHAR(20)
-);
+)
+COMMENT "Contiene información del Proveedor"
+;
 
 
 
@@ -27,7 +31,9 @@ CREATE TABLE Producto(
     nombre VARCHAR(100),
     descripcion TEXT,
     precio DECIMAL(10, 2)
-);
+)
+COMMENT "Contiene información de los productos"
+;
 
 
 CREATE TABLE Clientes (
@@ -35,7 +41,9 @@ CREATE TABLE Clientes (
     nombre VARCHAR(100),
     direccion VARCHAR(255),
     telefono VARCHAR(20)
-    );
+)
+COMMENT "Contiene información de los clientes"
+    ;
 
 CREATE TABLE Empleados (
     id_empleado INT AUTO_INCREMENT PRIMARY KEY,
@@ -43,12 +51,18 @@ CREATE TABLE Empleados (
     cargo VARCHAR(100),
     fecha_contratacion DATE,
     salario DECIMAL(10, 2)
-);
+)
+COMMENT "Contiene información de los empleados"
+;
 CREATE TABLE Ventas (
     id_venta INT AUTO_INCREMENT PRIMARY KEY,
     fecha_venta DATETIME,
     total DECIMAL(10, 2)
-);
+)
+
+COMMENT "Contiene información de las ventas"
+;
+
 
 -- Se agregan las FK
 -- FK Proveedor
